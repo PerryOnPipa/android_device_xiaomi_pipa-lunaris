@@ -75,8 +75,8 @@ apply_patch() {
 # ── Firmware Setup ──────────────────────────────────────────────
 setup_firmware() {
     local target_dir="${ROOT_DIR}/vendor/xiaomi/pipa"
-    local fw_url="https://github.com/Xiaomi-Pad6/vendor_xiaomi_pipa/releases/download/pipa-2/pipa-2.0.12.0-MI.zip"
-    local tmp_zip="/tmp/pipa-2.0.12.0-MI.zip"
+    local fw_url="https://github.com/SD870/vendor_xiaomi_pipa/releases/download/pipa-2.0.20.0-CN/pipa-2.0.20.0-CN.zip"
+    local tmp_zip="/tmp/pipa-2.0.20.0-CN.zip"
     local tmp_extract="/tmp/firmware_extract"
 
     # Skip entirely if radio folder already exists
