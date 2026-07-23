@@ -1,0 +1,19 @@
+// Copyright (C) 2026 nullpointer1101
+//
+// SPDX-License-Identifier: Apache-2.0
+
+android_app {
+    name: "PipaCore",
+    manifest: "AndroidManifest.xml",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    static_libs: [
+        "androidx.preference_preference",
+        "SettingsLibCollapsingToolbarLayout",
+        "SettingsLibMainSwitchPreference",
+        "SettingsLibFooterPreference",
+    ],
+}
