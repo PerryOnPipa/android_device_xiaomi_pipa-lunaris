@@ -14,16 +14,20 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 # Inherit from pipa device
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 
-# Axion Flags
-TARGET_DISABLE_EPPE := true
-TARGET_INCLUDE_AXFX := false
-AXION_CAMERA_REAR_INFO := 13
-AXION_CAMERA_FRONT_INFO := 8
-AXION_PROCESSOR := Snapdragon_870
-AXION_MAINTAINER := nullpointer1101
-TARGET_INCLUDES_LOS_PREBUILTS := false
-TARGET_INCLUDE_PARTNER_SETUP := true
-TARGET_INCLUDE_GOOGLE_TELECOMM := false
+# Singing keys
+$(call inherit-product, vendor/mine/keys.mk)
+
+# Lunaris Flags
+LUNARIS_BUILD_TYPE := Community
+WITH_GMS := true
+TARGET_OPTIMIZED_DEXOPT := true
+USE_REALITY_ENGINE := true
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_WALLPAPERS := false
+TARGET_USE_MAPS := true
+TARGET_USE_FILES := true
+TARGET_USE_GPHOTOS := true
+SURFACE_FLINGER_BOOST := true
 
 PRODUCT_NAME := lineage_pipa
 PRODUCT_DEVICE := pipa

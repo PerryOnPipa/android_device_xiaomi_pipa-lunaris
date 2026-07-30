@@ -40,6 +40,7 @@ clone_if_missing "https://github.com/SD870/vendor_xiaomi_sm8250-common"         
 clone_if_missing "https://github.com/SD870/vendor_xiaomi_pipa"                       "16"      "vendor/xiaomi/pipa"
 clean_clone      "https://github.com/SD870/hardware_xiaomi.git"                         "16"      "hardware/xiaomi"
 clean_clone      "https://github.com/PocoF3Releases/packages_resources_devicesettings.git" "aosp-16" "packages/resources/devicesettings"
+clone_if_missing "https://github.com/kuroringo90/priv_axion.git"                           "main"    "vendor/mine"
 echo "──────────────────────────────────────────────"
 
 apply_patch() {

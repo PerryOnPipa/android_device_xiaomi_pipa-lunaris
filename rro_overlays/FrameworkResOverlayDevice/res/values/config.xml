@@ -530,4 +530,7 @@
 
     <!-- Limit for the number of fingerprint templates per user -->
     <integer name="config_fingerprintMaxTemplatesPerUser">0</integer>
+
+    <!-- System Info -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
 </resources>
