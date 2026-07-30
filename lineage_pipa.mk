@@ -15,7 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 
 # Singing keys
-$(call inherit-product, vendor/mine/keys.mk)
+$(call inherit-product, vendor/lineage-priv/keys.mk)
 
 # Lunaris Flags
 LUNARIS_BUILD_TYPE := Community
