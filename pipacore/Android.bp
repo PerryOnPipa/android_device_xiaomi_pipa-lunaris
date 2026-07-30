@@ -12,7 +12,7 @@ android_app {
     privileged: true,
     static_libs: [
         "androidx.preference_preference",
-        "SettingsLibCollapsingToolbarLayout",
+        "SettingsLibCollapsingToolbarBaseActivity",
         "SettingsLibMainSwitchPreference",
         "SettingsLibFooterPreference",
     ],
