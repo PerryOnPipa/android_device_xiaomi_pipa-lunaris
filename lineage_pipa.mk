@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from pipa device
-$(call inherit-product, device/xiaomi/pipa/device.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 # Singing keys
 $(call inherit-product, vendor/lineage-priv/keys.mk)
