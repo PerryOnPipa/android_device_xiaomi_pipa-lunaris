@@ -41,6 +41,9 @@ clone_if_missing "https://github.com/SD870/vendor_xiaomi_pipa"                  
 clean_clone      "https://github.com/SD870/hardware_xiaomi.git"                         "16"      "hardware/xiaomi"
 clean_clone      "https://github.com/PocoF3Releases/packages_resources_devicesettings.git" "aosp-16" "packages/resources/devicesettings"
 clone_if_missing "https://github.com/kuroringo90/priv_axion.git"                           "main"    "vendor/lineage-priv"
+mkdir -p vendor/lineage-priv/keys 2>/dev/null || true
+mv vendor/lineage-priv/*.pk8 vendor/lineage-priv/keys/ 2>/dev/null || true
+mv vendor/lineage-priv/*.x509.pem vendor/lineage-priv/keys/ 2>/dev/null || true
 echo "──────────────────────────────────────────────"
 
 apply_patch() {
