@@ -34,7 +34,8 @@ clean_clone() {
         && ok "Cloned $dir." || { err "Clone failed: $url"; return 1; }
 }
 
-clone_if_missing "https://github.com/SD870/kernel_xiaomi_sm8250"                     "16"      "kernel/xiaomi/sm8250"
+# clone_if_missing "https://github.com/SD870/kernel_xiaomi_sm8250"                     "16"      "kernel/xiaomi/sm8250"
+clone_if_missing "https://github.com/CuriousNom/n0_kernel_pipa"                      "pipa-bpf" "kernel/xiaomi/sm8250"
 clone_if_missing "https://github.com/nullpointer1101/android_device_xiaomi_sm8250-common"  "16"      "device/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/SD870/vendor_xiaomi_sm8250-common"              "16"      "vendor/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/SD870/vendor_xiaomi_pipa"                       "16"      "vendor/xiaomi/pipa"
