@@ -857,6 +857,10 @@
         <ctl name="TERT_TDM_RX_0 Channels" value="Four" />
         <ctl name="TERT_TDM_RX_0 Format" value="S32_LE" />
         <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
+        <ctl name="aw_dev_0_prof" value="Mmi" />
+        <ctl name="aw_dev_1_prof" value="Mmi" />
+        <ctl name="aw_dev_2_prof" value="Mmi" />
+        <ctl name="aw_dev_3_prof" value="Mmi" />
         <ctl name="aw_dev_0_switch" value="Enable" />
         <ctl name="aw_dev_1_switch" value="Enable" />
         <ctl name="aw_dev_2_switch" value="Enable" />
